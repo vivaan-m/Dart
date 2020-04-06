@@ -1,0 +1,31 @@
+void main() {
+  
+  String currentName; //null
+  
+  int x = 12; 
+   int y = 0; 
+   double res;  
+   
+  // expection handling
+  
+   try {
+     print(currentName.length);
+ 
+   } 
+   catch(e){
+     if(e==IntegerDivisionByZeroException){
+       print("it is not possible to divide");
+     }
+     print(e);
+   }finally{
+       print(x);
+   }
+  
+  
+  print(getDeviceID());
+  
+}
+
+//fat arrow
+String getDeviceID() => "ehjdhajdhajsdhskdasjdhajdsh";
+
